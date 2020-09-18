@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48FF9800"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="412dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Give the temperature"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <ToggleButton
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:background="#D3DCE3"
+        android:baselineAligned="false"
+        android:text="Convert"
+        android:textOff="F->C"
+        android:textOn="C->F" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/tb"
+        android:layout_alignStart="@+id/tb"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="67dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
